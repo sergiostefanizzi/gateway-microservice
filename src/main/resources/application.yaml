@@ -11,13 +11,13 @@ spring:
           predicates:
             - Path=/accounts/**, /admins/{accountId}, /admins/accounts
           filters:
-            - AddResponseHeader=X-Powered-By, Gateway-Microservice
+            - AddResponseHeader=X-Powered-By, Gateway Microservice
         - id: profile_microservice
           uri: http://localhost:8084
           predicates:
             - Path=/profiles/**, /posts/**, /alerts/**, /admins/profiles/**, /admins/alerts/**
           filters:
-            - AddResponseHeader=X-Powered-By, Gateway-Microservice
+            - AddResponseHeader=X-Powered-By, Gateway Microservice
 management:
   endpoints:
     web:
