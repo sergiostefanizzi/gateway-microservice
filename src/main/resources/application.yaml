@@ -7,13 +7,13 @@ spring:
     gateway:
       routes:
         - id: account_microservice
-          uri: http://localhost:8081
+          uri: http://localhost:8083
           predicates:
             - Path=/accounts/**, /admins/{accountId}, /admins/accounts
           filters:
             - AddResponseHeader=X-Powered-By, Gateway Microservice
         - id: profile_microservice
-          uri: http://localhost:8082
+          uri: http://localhost:8084
           predicates:
             - Path=/profiles/**, /posts/**, /alerts/**, /admins/profiles/**, /admins/alerts/**
           filters:
