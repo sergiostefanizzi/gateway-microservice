@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.sergiostefanizzi</groupId>
 	<artifactId>gateway-microservice</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>gateway-microservice</name>
 	<description>Gateway for social application</description>
 	<properties>
